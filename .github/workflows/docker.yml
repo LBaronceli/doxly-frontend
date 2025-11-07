@@ -27,7 +27,8 @@ jobs:
       - name: Build image
         run: |
           OWNER="${{ github.repository_owner }}"
-          IMAGE="ghcr.io/${OWNER}/doxly-frontend"
+          OWNER_LC="$(echo "$OWNER" | tr '[:upper:]' '[:lower:]')"
+          IMAGE="ghcr.io/${OWNER_LC}/doxly-frontend"
           TAG="${{ steps.vars.outputs.TAG }}"
           docker build -t "$IMAGE:$TAG" .
           docker push "$IMAGE:$TAG"
