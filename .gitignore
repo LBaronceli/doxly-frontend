@@ -1,0 +1,74 @@
+# -------------------------
+# Node / Dependencies
+# -------------------------
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# -------------------------
+# Build Output
+# -------------------------
+dist/
+build/
+.out/
+.vite/
+.next/
+.temp/
+.cache/
+coverage/
+
+# -------------------------
+# Environment & Secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+# If you store firebase or GCP service accounts
+*.key.json
+*.pem
+
+# -------------------------
+# Logs
+# -------------------------
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+logs/
+*.log
+
+# -------------------------
+# OS / Editor Junk
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# JetBrains
+.idea/
+
+# -------------------------
+# TypeScript
+# -------------------------
+*.tsbuildinfo
+
+# -------------------------
+# Local Data / Dev Artifacts
+# -------------------------
+*.local
+*.cache
+.cache/
+tmp/
+temp/
